@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'reactstrap'
 import './header.css'
-
+import { motion } from 'framer-motion'
 import logo from "../../assets/images/logo[1].jpg"
 import user_icon from "../../assets/images/user-icon.png"
 import { Container, Row } from "reactstrap"
@@ -18,6 +18,10 @@ const nav__links=[
   {
     path:'cart',
     display:'Cart'
+  },
+  {
+    path:'about',
+    display:'About'
   }
 ]
 
@@ -29,7 +33,7 @@ const Header = () => {
           <div className='logo'>
             <img src={logo} alt='logo' />
             <div> 
-              <h1>YogaLakshimi</h1>
+              <h1>Yogalaxmi Industries</h1>
               <p>Since 1996</p>
             </div>
           </div>
@@ -54,12 +58,18 @@ const Header = () => {
             </ul>
           </div>
           <div className='nav__icons'>
-            <span className='fav__icon'><i class="ri-heart-line"></i></span>
+            <span className='fav__icon'><i class="ri-heart-line"></i>
+              <span className='badge'>1</span>
+            </span>
             <span className='cart__icon'>
               <i class="ri-shopping-bag-line"></i>
+              <span className='badge'>1</span>
             </span>
-            <span><img src={user_icon} alt='' /></span>
+            <span>
+              <motion.img whileTap={{scale:1.2}} src={user_icon} alt='' />
+            </span>
           </div>
+
           <div className='mobile_menu'>
             <span>
               <i class="ri-menu-line"></i>
