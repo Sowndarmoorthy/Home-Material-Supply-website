@@ -35,7 +35,7 @@ const products = [
     id: "01",
     productName: "CHETTINED MAXCRETE PREMIUM PPC",
     imgUrl: productImg01,
-    category: "Cement",
+    category: "Best Cement",
     price: 193,
     shortDesc:
       "MAXCRETE PREMIUM PPC",
@@ -99,7 +99,7 @@ const products = [
     id: "04",
     productName: "COMPOSITE ",
     imgUrl: productImg04,
-    category: "Cement",
+    category: "Best Cement",
     price: 253,
     shortDesc:
       "COMPOSITE",
@@ -189,7 +189,7 @@ const products = [
     id: "08",
     productName: "Ramco Supercrete",
     imgUrl: productImg07,
-    category: "Cement",
+    category: "Best Cement",
     price: 99,
     shortDesc:
       "Ramco Supercrete",
@@ -303,7 +303,7 @@ const products = [
     id: "12",
     productName: "UltraTech Cement",
     imgUrl: productImg13,
-    category: "Cement",
+    category: "Best Cement",
     price: 99,
     shortDesc:
     "OPC",

@@ -1,26 +1,26 @@
 const serviceData = [
   {
     icon: "ri-truck-line",
-    title: "Free Shipping",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    title: "Shipping",
+    subtitle: "Based On Km for delivery Place",
     bg: "#fdefe6",
   },
   {
     icon: "ri-refresh-line",
-    title: "Easy Returns",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    title: "Quality Materials",
+    subtitle: "We provide the best Materials with top qualities.",
     bg: "#ceebe9",
   },
   {
     icon: "ri-secure-payment-line",
     title: "Secure Payment",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    subtitle: "Less Cost and Good Quality Products",
     bg: "#e2f2b2",
   },
   {
     icon: "ri-exchange-dollar-line",
-    title: " Back Guarantee",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    title: "Verified Suppliers",
+    subtitle: "We offer a premium selection of Suppliers",
     bg: "#d6e5fb",
   },
 ];
