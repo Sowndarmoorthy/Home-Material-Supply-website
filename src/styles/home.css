@@ -41,3 +41,41 @@
     display: block;
     margin: 0 auto; 
 }
+
+.timer__count {
+    background: var(--primary-color);
+    height: 350px;
+}
+.timer__count img{
+    width: 120% !important;
+    height: 100% !important;
+    object-fit: contain;
+}
+.store__btn {
+    background-color: #fff;
+    color: var(--primary-color);
+    font-weight: 600;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px 1px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.store__btn a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.store__btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.store__btn a:hover {
+    color: #fff;
+}

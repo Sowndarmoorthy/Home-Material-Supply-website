@@ -8,19 +8,19 @@ import { Container, Row } from "reactstrap"
 
 const nav__links=[
   {
-    path:'home',
+    path:'/home',
     display:'Home'
   },
   {
-    path:'shop',
+    path:'/shop',
     display:'Shop'
   },
   {
-    path:'cart',
+    path:'/cart',
     display:'Cart'
   },
   {
-    path:'about',
+    path:'/about',
     display:'About'
   }
 ]

@@ -28,6 +28,13 @@ import productImg22 from "../images/CR sheet.png";
 
 import productImg23 from "../images/HR sheets.png";
 import productImg24 from "../images/GCsheet.png";
+import productImg25 from "../images/Galvan.png";
+
+import productImg26 from "../images/4inch.png";
+import productImg27 from "../images/6inch.png";
+import productImg28 from "../images/8inch.png";
+import productImg29 from "../images/9inch.png";
+
 
 
 const products = [
@@ -605,6 +612,116 @@ const products = [
     "Galvanized corrugated sheets ",
     description:
       "The most basic of the steel roofing sheets is the galvanized corrugated sheets. These sheets are created using steel as the base and a layer of Zinc is created above the inner steel layer which gives an added protection to the steel.",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "23",
+    productName: "Galvanized Iron Pipe",
+    imgUrl: productImg25,
+    category: "Pipe",
+    price: 199,
+    shortDesc:
+    "Galvanized Iron Pipe ",
+    description:
+      "Galvanized Iron PipeGalvanized iron pipes are steel pipes coated with a layer of zinc to protect against corrosion and rust.",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "24",
+    productName: "hollow block 4 inch",
+    imgUrl: productImg26,
+    category: "block",
+    price: 199,
+    shortDesc:
+    "Galvanized Iron Pipe ",
+    description:
+      "Galvanized Iron PipeGalvanized iron pipes are steel pipes coated with a layer of zinc to protect against corrosion and rust.",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "25",
+    productName: "hollow block 6 inch",
+    imgUrl: productImg27,
+    category: "block",
+    price: 199,
+    shortDesc:
+    "Galvanized Iron Pipe ",
+    description:
+      "Galvanized Iron PipeGalvanized iron pipes are steel pipes coated with a layer of zinc to protect against corrosion and rust.",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "26",
+    productName: "hollow block 8 inch",
+    imgUrl: productImg28,
+    category: "block",
+    price: 199,
+    shortDesc:
+    "Galvanized Iron Pipe ",
+    description:
+      "Galvanized Iron PipeGalvanized iron pipes are steel pipes coated with a layer of zinc to protect against corrosion and rust.",
+    reviews: [
+      {
+        rating: 4.8,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+      {
+        rating: 4.9,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.8,
+  },
+  {
+    id: "27",
+    productName: "hollow block 9 inch",
+    imgUrl: productImg29,
+    category: "block",
+    price: 199,
+    shortDesc:
+    "Galvanized Iron Pipe ",
+    description:
+      "Galvanized Iron PipeGalvanized iron pipes are steel pipes coated with a layer of zinc to protect against corrosion and rust.",
     reviews: [
       {
         rating: 4.8,
