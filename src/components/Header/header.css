@@ -1,68 +1,92 @@
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 
-
-.header{
+/* Header Styles */
+.header {
     width: 100%;
     height: 70px;
     line-height: 70px;
+    overflow: hidden;
 }
 
-.nav__wrapper{
+.nav__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    width: 100%;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     column-gap: 8px;
 }
+
 .logo img {
-    width: 3.5rem; 
-    height: 3.5rem; 
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
-.logo h1{
-    font-size: 1.2rem;
+.logo h1 {
+    font-size: 1.3rem;
     font-weight: 700;
     color: var(--primary-color);
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
     column-gap: 2.7rem;
     margin-bottom: 0;
 }
 
+/* Navigation Items */
 .nav__item a {
     color: var(--primary-color);
     font-weight: 500;
     cursor: pointer;
-
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.nav__icons{
+/* Dark effect when hovered */
+.nav__item a:hover {
+    background: #000;  /* Dark black background */
+    color: #fff;       /* White text for contrast */
+}
+
+/* Icons */
+.nav__icons {
     display: flex;
     align-items: center;
     column-gap: 1.2rem;
 }
 
-.nav__icons span i{
+.nav__icons span i {
     font-size: 1.4rem;
     color: var(--primary-color);
     cursor: pointer;
 }
 
+/* Fix the badge positioning */
 .cart__icon,
-.fav__icon{
+.fav__icon {
     position: relative;
 }
- .badge{
+
+.badge {
     position: absolute;
     top: 15%;
     right: -8%;
     width: 15px;
     height: 15px;
-    content: '';
     background: var(--primary-color);
     color: #fff;
     border-radius: 50px;
@@ -72,18 +96,89 @@
     font-size: 0.7rem;
     font-weight: 600;
     z-index: 10;
- }
-.nav__icons span img{
-    width: 30px;
-    height: 30px;
 }
 
-.mobile__menu{
+/* Mobile Menu */
+.mobile__menu {
     font-size: 1.3rem;
     color: var(--primary-color);
     display: none;
 }
 
-.nav__active{
-    font-weight: 700 !important;
+/* Sticky Header */
+.sticky__header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+    background: #fff;
+}
+
+/* Responsive Design Fix */
+@media only screen and (max-width: 768px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.53);
+        z-index: 999;
+        display: none;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        z-index: 99999;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .active__menu {
+        display: flex;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+
+    .mobile__menu span i {
+        font-size: 1.1rem !important;
+    }
+
+    .logo img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .logo h1 {
+        font-size: 1rem;
+    }
+
+    .fav__icon i,
+    .cart__icon i {
+        font-size: 1.2rem !important;
+    }
+
+    .nav__icons span img {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .header {
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
 }

@@ -1,46 +1,71 @@
-.product__item{
+.product__item {
     cursor: pointer;
 }
 
+/* Product Information */
 .product__info h3 a {
-    font-size: 0.8rem; /* Reduced font size */
+    font-size: 0.8rem; 
     color: var(--primary-color);
     font-weight: 600;
     margin-top: 15px;
-}
-.product__name {
-    font-size: 0.9rem; 
-    font-weight: 600;  
-    color: var(--primary-color); 
-    margin-top: 10px; 
+    transition: color 0.3s ease;
 }
 
-
-.product__info a:hover{
+.product__info a:hover {
     color: inherit;
 }
 
-.product__info span{
+.product__name {
     font-size: 0.9rem;
-}
-.product__img img {
-    width: 55%; 
-    height: 200px; 
-    object-fit: cover; 
-    border-radius: 10px; 
-    transition: transform 0.3s ease; 
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 10px;
 }
 
-.product__card-bottom .price{
+.product__info span {
+    font-size: 0.9rem;
+}
+
+/* Product Image - Same Size for All Devices */
+.product__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__img img {
+    width: 250px; /* Fixed width */
+    height: 250px; /* Fixed height */
+    object-fit: cover; /* Ensures all images fill the same space */
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Product Price and Icons */
+.product__card-bottom .price {
     color: var(--primary-color);
-    font-size: 1.0rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
-.product__card-bottom span i{
+.product__card-bottom span i {
     font-size: 1.2rem;
     padding: 5px;
     background: var(--primary-color);
     color: #fff;
     border-radius: 50px;
+}
+
+/* Responsive Styles (Ensures Same Size on Mobile) */
+@media only screen and (max-width: 768px) {
+    .product__info h3 a {
+        font-size: 1rem;
+    }
+    .product__card-bottom span i {
+        font-size: 1rem;
+    }
+    .product__img img {
+        width: 200px; /* Slightly smaller for mobile */
+        height: 200px;
+    }
 }

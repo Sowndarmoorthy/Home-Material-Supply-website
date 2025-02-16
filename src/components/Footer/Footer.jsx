@@ -1,12 +1,11 @@
 import React from 'react'
 import './footer.css';
-import logo from "../../assets/images/logo[1].jpg"
 
 import {Container, Row, Col, ListGroup, ListGroupItem} from "reactstrap";
 import {Link} from "react-router-dom";
 
 const Footer = () => {
-  const year = new Date().getFullYear;
+  const year = new Date().getFullYear();
   return (
     <footer className='footer'>
       <Container>
@@ -63,16 +62,16 @@ const Footer = () => {
           <Col lg='3'>
             <div className='footer__quick-links'>
               <h4 className='quick__links-title'>Contact</h4>
-              <ListGroup>
-                <ListGroupItem className="ps-0 border-0">
+              <ListGroup className="footer__contact">
+                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
                    <span><i className="ri-map-pin-line"></i></span>
                    <p>Neru nagar, Sathy Road, Punjai Puliyampatti,Erode  </p>
                 </ListGroupItem>
-                <ListGroupItem className="ps-0 border-0">
+                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
                    <span><i className="ri-phone-line"></i></span>
                    <p>979-048-7039</p>
                 </ListGroupItem>
-                <ListGroupItem className="ps-0 border-0">
+                <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
                    <span><i className="ri-mail-line"></i></span>
                    <p>sowndarmoorthy@gmail.com</p>
                 </ListGroupItem>
