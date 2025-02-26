@@ -32,6 +32,7 @@ html, body {
     justify-content: space-between;
     width: 100%;
     padding: 0 20px;
+    box-sizing: border-box;  /* Prevents content overflow */
 }
 
 /* Logo */
@@ -61,6 +62,11 @@ html, body {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+/* Prevent menu from breaking layout */
+.menu li {
+    white-space: nowrap;
 }
 
 .nav__item a {
@@ -158,6 +164,7 @@ html, body {
         align-items: center;
         justify-content: center;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        overflow-y: auto; /* Allows scrolling if menu overflows */
     }
 
     .active__menu {
